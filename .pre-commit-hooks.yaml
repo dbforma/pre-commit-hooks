@@ -202,6 +202,6 @@
 -   id: pyflakes
     name: pyflakes
     description: Run pyflakes and check for unused imports
-    entry: ./pre-commit-hooks/pyflakes.sh
+    entry: ./pre_commit_hooks/pyflakes.sh
     language: script
     stages: [commit, push, manual]
