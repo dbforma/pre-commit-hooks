@@ -7,7 +7,7 @@ import sys
 def main():
     print("Running hook-pyflakes.py...")
 
-    find_cmd = "find $PWD -type d -name '.env' -prune -o -type f -name '*.py' -print"
+    find_cmd = "find $PWD -type d -name '.*' -prune -o -type f -name '*.py' -print"
     xargs_cmd = "xargs pyflakes"
 
     proc_find = subprocess.Popen(
